@@ -1,0 +1,220 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  font-family: "Barlow";
+}
+
+/* Background */
+.background-grey {
+  width: 51%;
+  height: 58%;
+  background-color: hsl(207, 33%, 95%);
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 38px;
+}
+
+
+/* Navigation Bar */
+.navbar {
+  padding: 5% 10%;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.nav-item {
+  margin-left: 10%;
+}
+
+
+
+.navbar-nav {
+  width: 42%;
+}
+
+.nav-link {
+  color: hsl(230, 29%, 20%);
+}
+
+.nav-link:hover {
+  color: hsl(230, 29%, 20%);
+  text-decoration: underline;
+}
+
+.sub-item {
+  margin-left: 5%;
+  color: hsl(231, 7%, 65%);
+}
+
+.sub-item:hover {
+  color: hsl(231, 7%, 65%);
+  text-decoration: underline;
+}
+
+.divider2 {
+  display: none;
+}
+
+/* Main Content */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "col-1 img-col";
+  position: relative;
+  max-width: 1440px;
+  padding: 4% 0;
+}
+
+#img-col {
+  overflow: hidden;
+  grid-area: img-col;
+}
+#img-col img {
+  width:139%;
+  overflow: hidden;
+}
+
+#col-1 {
+  padding: 6% 12% 0 20%;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  grid-area: col-1;
+}
+
+#col-1 h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 5% 0;
+}
+
+.new {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  margin-right: 2%;
+  padding: 0 2%;
+  border: none;
+  border: 1px solid;
+  border-radius: 38px;
+}
+
+.demo-btn {
+  text-transform: uppercase;
+  background-color: hsl(0, 100%, 68%);
+  color: white;
+  margin-right: 4%;
+  padding: 2.5% 8%;
+  border: none;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.demo-btn:hover {
+  background-color: hsla(0, 100%, 68%,0.7);
+}
+
+#col-1 h5 {
+  display: inline;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  color: hsl(231, 7%, 65%);
+}
+
+#col-1 h4 {
+  display: inline;
+  font-size: 0.8rem;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 0.2em;
+}
+
+#col-1 p {
+  text-transform: none;
+  font-size: 1.5rem;
+  padding-right: 40%;
+  color: hsl(231, 7%, 65%);
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img-col"
+    "col-1";
+  }
+
+  #img-col img {
+    width:132%;
+    overflow: hidden;
+    margin-top:15%;
+    margin-left: 4%;
+  }
+
+  #col-1 {
+    padding: 24% 10% 15%;
+  }
+
+  #col-1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .new {
+    padding: 1% 4%;
+  }
+
+  .demo-btn {
+    padding: 1% 5;
+    font-size: 0.8rem;
+  }
+
+  #col-1 h4 {
+    font-size: 1rem;
+  }
+
+  #col-1 p {
+    font-size: 1.5rem;
+    padding-right: 0;
+
+  }
+.navbar-nav {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.03);
+  margin-top: 8%;
+  margin: 8% 5% 0 0;
+  padding: 4% 0;
+}
+
+.navbar-nav li{
+  width: 100%;
+  margin: 0;
+}
+
+.navbar-nav li a{
+  width: 100%;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.divider {
+  display: none;
+}
+
+.divider2 {
+  display: block;
+}
+.divider2 hr{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+}
